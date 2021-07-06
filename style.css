@@ -1,0 +1,38 @@
+body{
+    text-align:center;
+    background-color:gray;
+    
+  }
+  
+  h1{
+    font-family: 'Teko', sans-serif;
+    font-size:7.5em;
+    line-height:1em;
+  }
+  h2{
+    font-family: 'Teko', sans-serif;
+    font-size:2em;
+    line-height:1em;
+  }
+  p{
+    font-family: 'Merriweather', serif;
+  }
+ 
+  
+  button{
+    background:Salmon;
+    border:none;
+    margin-top:20px;
+    line-height:60px;
+    font-weight: bold;
+    padding: 0 40px;
+    font-size: 20px;
+  }
+  button:hover{
+    background:white;
+    border: none;
+  }
+  #sqrtC{
+    color:Red;
+  }
+  

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pythagorean triple </title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h4>Pythagorean Theorem</h4>
+	<h2>Enter the sides of the triangle</h2>
+	<p>A:<input type="number" id="a" min="1" max="20000" ></p>
+	<p>B:<input type="number" id="b" min="1" max="20000"></p>
+	
+	<button onclick="findPythagorean()">Press button to find the hypotenuse!</button>
+	
+	<p>A<sup>2</sup> = <span id="aSqu"></span>
+	<p>B<sup>2</sup> = <span id="bSqu"></span>
+	<p>A<sup>2</sup> + B<sup>2</sup>  = <span id="aAndB"></span>
+	
+	<p>Hypotenuse = <span id="sqrtC"></span>
+	  
+	  
+
+	
+
+   
+<script>
+function findPythagorean(){
+  var sideA = document.getElementById("a").value;
+  var sideB = document.getElementById("b").value;
+ 
+
+  if(sideA<1 || sideB<1  ){
+     alert("plz vaild number !");
+     }else{
+  //get a squared and b squared
+  document.getElementById("aSqu").innerHTML = sideA * sideA;
+  document.getElementById("bSqu").innerHTML = sideB * sideB;
+  
+  //find sum of a squared and b squared
+  document.getElementById("aAndB").innerHTML = (sideA * sideA) + (sideB * sideB);
+  
+  //find hypotenuse
+   document.getElementById("sqrtC").innerHTML = Math.round((Math.sqrt((sideA * sideA) + (sideB * sideB)) * 100)) / 100;
+  
+  
+ }
+}
+
+</script>
+
+
+  
+</body>
+</html>
